@@ -1,3 +1,4 @@
+
 | Funzione               | Descrizione                                                                                    | Esempio                                                                                                                                                                                                                                                                                                                    | Parametri più utilizzati                                                                  |
 | ---------------------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | [[st.write()]]         | Visualizza qualsiasi tipo di contenuto (testo, grafici, tabelle) nell'interfaccia di Streamlit | `st.write('Ciao mondo!')`                                                                                                                                                                                                                                                                                                  | - Qualsiasi oggetto Python                                                                |
@@ -20,4 +21,116 @@
 | [[st.map()]]           | Mostra una mappa basata su dati geolocalizzati.                                                | `import pandas as pd; st.map(data=pd.DataFrame({'lat': [37.76], 'lon': [-122.4]}))`                                                                                                                                                                                                                                        | - `data`                                                                                  |
 | [[st.page()]]          | Crea più pagine nella tua app per una navigazione multi-pagina.                                | `import streamlit as st; from streamlit_option_menu import option_menu; pagina = option_menu(menu_title='Menu di Navigazione', options=['Pagina 1', 'Pagina 2'], icons=['house', 'gear']); if pagina == 'Pagina 1': st.write('Benvenuti nella Pagina 1'); elif pagina == 'Pagina 2': st.write('Benvenuti nella Pagina 2')` | - `name` (nome della pagina), `icon` (icona della pagina), `layout` (layout della pagina) |
 
-Questa tabella copre alcune delle principali funzionalità di Streamlit per la creazione di interfacce utente interattive in Python. Se vuoi approfondire un uso specifico o hai bisogno di un esempio più dettagliato, fammi sapere!
+---
+### Codice di Esempio utilizzando un database:
+
+```python
+# Importare le librerie necessarie
+import streamlit as st
+import pandas as pd
+import mysql.connector
+from mysql.connector import Error
+import time
+from streamlit_option_menu import option_menu
+import numpy as np
+
+# Connessione al database MySQL
+def connect_to_database():
+    try:
+        connection = mysql.connector.connect(
+            host='localhost',
+            database='esempio_db',
+            user='utente',
+            password='password'
+        )
+        if connection.is_connected():
+            return connection
+    except Error as e:
+        st.error(f"Errore durante la connessione al database: {e}")
+        return None
+
+# Creare un menu di navigazione per le diverse sezioni dell'applicazione
+pagina = option_menu(
+    menu_title='Navigazione',
+    options=['Introduzione', 'Visualizza Dati', 'Filtra Dati', 'Inserisci Dati'],
+    icons=['info', 'table', 'filter', 'plus'],
+    menu_icon='menu-button'
+)
+
+# Connessione al database
+connection = connect_to_database()
+
+if connection:
+    if pagina == 'Introduzione':
+        # Pagina di introduzione
+        st.title("Introduzione")
+        st.write("Questa applicazione consente di interagire con un database MySQL. Utilizzando Streamlit, puoi visualizzare, filtrare e inserire dati in modo interattivo.")
+
+    elif pagina == 'Visualizza Dati':
+        # Visualizzare i dati dal database
+        st.title("Visualizza Dati")
+        query = "SELECT * FROM clienti"
+        df = pd.read_sql(query, con=connection)
+        st.dataframe(df)  # Utilizzare st.dataframe per visualizzare il DataFrame in modo interattivo
+
+    elif pagina == 'Filtra Dati':
+        # Filtrare i dati in base all'età
+        st.title("Filtra Dati")
+        età_min = st.slider("Seleziona l'età minima:", min_value=0, max_value=100, value=30)  # Utilizzare st.slider per selezionare l'età minima
+        query = f"SELECT * FROM clienti WHERE età >= {età_min}"
+        df = pd.read_sql(query, con=connection)
+        st.dataframe(df)  # Visualizzare il DataFrame filtrato
+
+    elif pagina == 'Inserisci Dati':
+        # Inserire nuovi dati nel database
+        st.title("Inserisci Dati")
+        nome = st.text_input("Nome del cliente:")  # Utilizzare st.text_input per inserire il nome
+        età = st.number_input("Età del cliente:", min_value=0, max_value=120, value=25)  # Utilizzare st.number_input per inserire l'età
+        città = st.text_input("Città del cliente:")  # Utilizzare st.text_input per inserire la città
+
+        if st.button("Inserisci Cliente"):  # Utilizzare st.button per inserire i dati nel database
+            try:
+                cursor = connection.cursor()
+                insert_query = f"INSERT INTO clienti (nome, età, città) VALUES ('{nome}', {età}, '{città}')"
+                cursor.execute(insert_query)
+                connection.commit()
+                st.success("Cliente inserito con successo!")
+            except Error as e:
+                st.error(f"Errore durante l'inserimento dei dati: {e}")
+
+    # Barra laterale con impostazioni aggiuntive
+    st.sidebar.header("Impostazioni")
+    mostra_mappa = st.sidebar.checkbox("Mostra posizioni clienti su mappa")  # Utilizzare st.sidebar per creare controlli nella barra laterale
+
+    if mostra_mappa:
+        # Visualizzare le posizioni dei clienti su una mappa
+        st.header("Mappa delle Posizioni dei Clienti")
+        query = "SELECT latitudine, longitudine FROM clienti"
+        df = pd.read_sql(query, con=connection)
+        if not df.empty:
+            st.map(df)  # Utilizzare st.map per visualizzare i dati geolocalizzati
+        else:
+            st.warning("Nessuna posizione disponibile.")
+
+    # Barra di progresso durante l'elaborazione
+    st.header("Esempio di Barra di Progresso")
+    st.write("Elaborazione in corso...")
+    progresso = st.progress(0)  # Utilizzare st.progress per mostrare l'avanzamento di un processo
+    for i in range(100):
+        time.sleep(0.01)
+        progresso.progress(i + 1)
+    st.write("Elaborazione completata!")
+
+    # Grafico a linee per visualizzare dati di esempio
+    st.header("Grafico delle Vendite")
+    dati_vendite = pd.DataFrame(
+        np.random.randint(100, 500, size=(100, 1)),
+        columns=['Vendite']
+    )
+    st.line_chart(dati_vendite)  # Utilizzare st.line_chart per visualizzare l'andamento delle vendite
+
+    # Chiudere la connessione al database
+    connection.close()
+else:
+    st.error("Impossibile connettersi al database. Verifica le tue credenziali.")
+```
