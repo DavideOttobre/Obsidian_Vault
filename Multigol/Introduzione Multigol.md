@@ -1,3 +1,5 @@
+## Modificare la struttura per far in modo, che indipendentemente dalla quota inserita, che non dovrà essere inserita, calcoli la quota kinima per avere un vantaggio del 10%
+
 Ecco un procedimento completo e schematizzato che include le modifiche richieste per migliorare l'accuratezza delle previsioni, utilizzando sia i dati recenti, storici, le partite con quote simili e i precedenti tra le squadre.
 
 ### Procedimento Completo
