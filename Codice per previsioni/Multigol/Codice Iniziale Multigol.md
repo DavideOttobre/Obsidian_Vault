@@ -79,7 +79,6 @@ print(f"\nValore atteso per multigol 2-4 con quota {quota}: {ev_multigol_2_4:.4f
 
 ### Modificato
 Dovrebbe dare in output le quote migliori per garantire un 10% di EV, fa il ragionamento inverso visto che le quote non ho voglia di inserirle
-
 ```python
 import numpy as np
 from scipy.stats import poisson

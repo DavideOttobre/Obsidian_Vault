@@ -288,3 +288,63 @@ Questa funzione simula l'interfaccia utente e guida l'interazione con l'utente:
 In questo modo, il codice esegue simultaneamente l'analisi per gli asset esistenti (come Corner e Tiri) e per il multigol, utilizzando un flusso coerente e dati estratti dallo stesso file JSON.
 
 Spero che la spiegazione ti abbia chiarito il funzionamento del codice! Se hai ulteriori domande o desideri altre modifiche, fammi sapere.
+
+---
+
+### Prompt Descrittivo per il Codice
+
+#### **Scopo del Codice**
+Il codice ha lo scopo di effettuare un'analisi predittiva su eventi calcistici utilizzando dati storici provenienti da file JSON. Gli eventi analizzati includono:
+- **Multigol**: calcolo della probabilità che il numero totale di gol in una partita rientri in un intervallo specifico (ad esempio, tra 1 e 3 o tra 2 e 4 gol).
+- **Altri asset**: come **Corner** e **Tiri**, per i quali vengono analizzati i dati statistici relativi a questi eventi nelle partite passate.
+
+Lo scopo principale è fornire una previsione accurata di tali eventi, calcolando la probabilità che si verifichino, e confrontare tali probabilità con le quote offerte dai bookmaker, calcolando il **valore atteso (EV)** di una potenziale scommessa.
+
+#### **Funzionamento del Codice**
+1. **Estrazione dei dati dai file JSON**:
+   - Il codice legge una serie di file JSON che contengono informazioni dettagliate sulle partite di calcio, tra cui i gol segnati, i corner, i tiri e altri eventi.
+   - Per ogni asset (ad esempio Corner, Tiri, o Gol), vengono estratti i dati relativi alle squadre selezionate (squadra di casa e squadra in trasferta).
+
+2. **Calcolo delle medie statistiche**:
+   - Per ogni squadra vengono calcolate le medie dei gol segnati e subiti, così come le medie per gli altri asset (corner, tiri, ecc.). Queste medie sono fondamentali per determinare le probabilità di futuri eventi.
+   - Nel caso del **multigol**, vengono utilizzati i gol segnati e subiti per calcolare una media ponderata (\( \lambda \)) delle reti attese in una partita, tenendo conto anche degli scontri diretti tra le due squadre, se disponibili.
+
+3. **Distribuzione di Poisson**:
+   - Per calcolare la probabilità che un evento rientri in una soglia specifica (ad esempio, che ci siano tra 1 e 3 gol), il codice utilizza la **distribuzione di Poisson**. Questa distribuzione statistica è ideale per modellare eventi discreti come il numero di gol segnati in una partita.
+   - Il valore \( \lambda \) (la media dei gol attesi) viene utilizzato come input nella distribuzione di Poisson per stimare la probabilità che si verifichi un determinato numero di gol.
+
+4. **Calcolo del Valore Atteso (EV)**:
+   - Il codice calcola il **valore atteso (EV)** di una scommessa utilizzando la probabilità prevista e la quota offerta dal bookmaker.
+   - La formula per calcolare l'EV è: 
+     
+$$
+     EV = (P \times Q) - 1
+$$
+     
+Dove \( P \) è la probabilità dell'evento e \( Q \) è la quota offerta dal bookmaker. Se il valore atteso è positivo, indica una potenziale scommessa di valore.
+
+5. **Esecuzione simultanea di più analisi**:
+   - Il codice esegue simultaneamente l'analisi per più asset, tra cui il multigol e altri eventi come corner e tiri. Vengono eseguite contemporaneamente previsioni per le stesse squadre selezionate, utilizzando le medie statistiche estratte dai file JSON.
+   - L'utente può definire soglie personalizzate per ciascun asset, come la soglia di gol per il multigol (ad esempio, 1-3 o 2-4 gol), o una soglia di corner.
+
+#### **Logica del Codice**
+- **Estrazione dati JSON**: La funzione `analyze_json_files()` è responsabile dell'estrazione dei dati rilevanti dai file JSON, come i gol segnati e subiti dalle squadre. Questa funzione supporta sia i dati sui gol (per il multigol) sia gli altri asset (corner, tiri, ecc.).
+  
+- **Calcolo delle probabilità**: Viene utilizzata la distribuzione di Poisson per calcolare la probabilità che un evento rientri in un certo intervallo. Ad esempio, nel caso del multigol, viene calcolata la probabilità che il numero di gol totali nella partita rientri in un intervallo specificato (es. tra 1 e 3 gol).
+
+- **Calcolo del valore atteso (EV)**: Una volta calcolata la probabilità dell'evento, viene confrontata con la quota del bookmaker per determinare se la scommessa ha valore. Questo viene fatto per tutti gli asset selezionati, incluso il multigol.
+
+#### **Funzionalità Principali**
+- **Analisi Multigol**: Calcola le probabilità per gli intervalli multigol selezionati, come 1-3 o 2-4 gol totali.
+- **Analisi di altri asset**: Include corner, tiri, e altre statistiche estratte dal file JSON.
+- **Esecuzione simultanea**: Tutte le analisi vengono eseguite contemporaneamente per le squadre selezionate, producendo previsioni e il valore atteso (EV) per ciascun asset.
+- **Flessibilità**: Permette di definire soglie personalizzate per ogni asset e di confrontare le probabilità con le quote offerte dal bookmaker.
+
+#### **Come Usare il Codice**
+1. Inserisci i file JSON contenenti i dati storici delle partite nella cartella appropriata.
+2. Esegui il codice e specifica le squadre di casa e trasferta per le quali vuoi effettuare l'analisi.
+3. Seleziona gli asset da analizzare (es. Corner, Tiri, Multigol).
+4. Inserisci le soglie di interesse (ad esempio, soglia di corner >10, o multigol tra 1 e 3 gol).
+5. Il codice restituirà la probabilità di ciascun evento e il valore atteso (EV) calcolato sulla base delle quote offerte dal bookmaker.
+
+---
