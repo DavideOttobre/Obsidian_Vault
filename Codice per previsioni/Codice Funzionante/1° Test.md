@@ -288,3 +288,146 @@ Questa funzione simula l'interfaccia utente e guida l'interazione con l'utente:
 In questo modo, il codice esegue simultaneamente l'analisi per gli asset esistenti (come Corner e Tiri) e per il multigol, utilizzando un flusso coerente e dati estratti dallo stesso file JSON.
 
 Spero che la spiegazione ti abbia chiarito il funzionamento del codice! Se hai ulteriori domande o desideri altre modifiche, fammi sapere.
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <jansson.h> // Libreria per JSON parsing
+#include <math.h>    // Per il calcolo della distribuzione di Poisson
+
+// Struttura per gestire le statistiche di goal
+typedef struct {
+    double scored;
+    double conceded;
+    int count;
+} Stats;
+
+// Struttura per memorizzare le statistiche delle squadre
+typedef struct {
+    Stats home;
+    Stats away;
+} TeamStats;
+
+// Funzione per calcolare la distribuzione di Poisson
+double poisson_pmf(int k, double lambda) {
+    return pow(lambda, k) * exp(-lambda) / tgamma(k + 1);
+}
+
+// Funzione per analizzare i file JSON e calcolare le medie dei gol
+void analyze_json_files(char *json_files[], int num_files, char *home_team_input, char *away_team_input, 
+                        TeamStats *goal_stats, int *direct_encounters, int *num_encounters) {
+    for (int i = 0; i < num_files; i++) {
+        json_error_t error;
+        json_t *root = json_load_file(json_files[i], 0, &error);
+        if (!root) {
+            printf("Error processing file %s: %s\n", json_files[i], error.text);
+            continue;
+        }
+
+        json_t *partite = json_object_get(root, "partite");
+        if (!json_is_array(partite)) {
+            printf("Invalid JSON structure in file %s\n", json_files[i]);
+            json_decref(root);
+            continue;
+        }
+
+        size_t index;
+        json_t *match;
+        json_array_foreach(partite, index, match) {
+            const char *home_team = json_string_value(json_object_get(match, "squadra_casa"));
+            const char *away_team = json_string_value(json_object_get(match, "squadra_trasferta"));
+            int goals_home = json_integer_value(json_object_get(match, "gol_casa"));
+            int goals_away = json_integer_value(json_object_get(match, "gol_trasferta"));
+
+            // Aggiorna le statistiche per la squadra di casa
+            goal_stats[home_team_input].home.scored += goals_home;
+            goal_stats[home_team_input].home.conceded += goals_away;
+            goal_stats[home_team_input].home.count++;
+
+            // Aggiorna le statistiche per la squadra ospite
+            goal_stats[away_team_input].away.scored += goals_away;
+            goal_stats[away_team_input].away.conceded += goals_home;
+            goal_stats[away_team_input].away.count++;
+
+            // Salva gli scontri diretti
+            if (strcmp(home_team, home_team_input) == 0 && strcmp(away_team, away_team_input) == 0) {
+                direct_encounters[*num_encounters] = goals_home + goals_away;
+                (*num_encounters)++;
+            }
+        }
+
+        json_decref(root);
+    }
+
+    // Calcola la media dei goal segnati e subiti
+    for (int i = 0; i < 2; i++) {
+        if (goal_stats[home_team_input].home.count > 0) {
+            goal_stats[home_team_input].home.scored /= goal_stats[home_team_input].home.count;
+            goal_stats[home_team_input].home.conceded /= goal_stats[home_team_input].home.count;
+        }
+        if (goal_stats[away_team_input].away.count > 0) {
+            goal_stats[away_team_input].away.scored /= goal_stats[away_team_input].away.count;
+            goal_stats[away_team_input].away.conceded /= goal_stats[away_team_input].away.count;
+        }
+    }
+}
+
+// Funzione per calcolare la probabilità del multigol
+double calcola_probabilita_multigol(TeamStats *goal_stats, char *home_team, char *away_team, int *direct_encounters, 
+                                    int num_encounters, int *multigol_intervallo, int multigol_size) {
+    // Media dei gol segnati/subiti per le squadre di casa e trasferta
+    double home_avg_for = goal_stats[home_team].home.scored;
+    double away_avg_against = goal_stats[away_team].away.conceded;
+    double home_avg_against = goal_stats[home_team].home.conceded;
+    double away_avg_for = goal_stats[away_team].away.scored;
+
+    // Calcolo del lambda (gol attesi)
+    double lambda_home = home_avg_for + away_avg_against;
+    double lambda_away = away_avg_for + home_avg_against;
+
+    // Calcolo del lambda ponderato con gli scontri diretti
+    double direct_encounters_avg = 0.0;
+    for (int i = 0; i < num_encounters; i++) {
+        direct_encounters_avg += direct_encounters[i];
+    }
+    direct_encounters_avg /= num_encounters > 0 ? num_encounters : 1;
+
+    double weighted_lambda = (lambda_home + lambda_away) * 0.7 + direct_encounters_avg * 0.3;
+
+    // Calcolo della probabilità per l'intervallo multigol
+    double prob_multigol = 0.0;
+    for (int i = 0; i < multigol_size; i++) {
+        prob_multigol += poisson_pmf(multigol_intervallo[i], weighted_lambda);
+    }
+
+    return prob_multigol;
+}
+
+int main() {
+    char *json_files[] = {"file1.json", "file2.json"};
+    int num_files = 2;
+    char home_team[] = "Altach";
+    char away_team[] = "Wolfsberger";
+
+    // Dati per gestire le statistiche delle squadre
+    TeamStats goal_stats[100] = {0}; // Consideriamo 100 squadre al massimo
+    int direct_encounters[100] = {0};
+    int num_encounters = 0;
+
+    analyze_json_files(json_files, num_files, home_team, away_team, goal_stats, direct_encounters, &num_encounters);
+
+    // Intervalli multigol definiti
+    int multigol_1_3[] = {1, 2, 3};
+    int multigol_2_4[] = {2, 3, 4};
+
+    // Calcolo delle probabilità per i due intervalli
+    double prob_multigol_1_3 = calcola_probabilita_multigol(goal_stats, home_team, away_team, direct_encounters, num_encounters, multigol_1_3, 3);
+    double prob_multigol_2_4 = calcola_probabilita_multigol(goal_stats, home_team, away_team, direct_encounters, num_encounters, multigol_2_4, 3);
+
+    printf("Probabilità multigol 1-3: %.4f\n", prob_multigol_1_3);
+    printf("Probabilità multigol 2-4: %.4f\n", prob_multigol_2_4);
+
+    return 0;
+}
+
+```
