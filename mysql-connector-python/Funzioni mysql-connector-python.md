@@ -19,5 +19,6 @@
 | get_table_columns(connection, table)                | Restituisce i nomi delle colonne di una tabella.                                                  |
 | check_table_exists(connection, table)               | Verifica se una tabella esiste nel database.                                                      |
 | count_rows(connection, table)                       | Restituisce il numero di righe di una tabella specifica.                                          |
+| [[cursor]]                                          | Il metodo cursor crea un oggetto in grado di interagire con il database e contenere gli output    |
 
 Queste funzioni coprono le operazioni fondamentali per lavorare con un database MySQL tramite Python. Se ti interessa vedere come implementare una o più di queste funzioni, fammi sapere!
