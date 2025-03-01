@@ -8,34 +8,105 @@
         "type": "tabs",
         "children": [
           {
-            "id": "34980d589b604720",
+            "id": "5d2857277ed53022",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL/01_Introduzione_SQL.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01_Introduzione_SQL"
-            }
-          },
-          {
-            "id": "0c3b938cd4d21392",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SQL/04_Filtrare_Dati_WHERE.md",
+                "file": "WebApp_Backend/05_Deployment/02_Deploy_Cloud.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04_Filtrare_Dati_WHERE"
+              "title": "02_Deploy_Cloud"
+            }
+          },
+          {
+            "id": "0971e6b33ab25186",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WebApp_Backend/05_Deployment/03_Monitoraggio.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03_Monitoraggio"
+            }
+          },
+          {
+            "id": "e652dcab6acb311c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WebApp_Backend/06_Manutenzione/01_Scalabilità.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01_Scalabilità"
+            }
+          },
+          {
+            "id": "c1d6be9da2ef437b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WebApp_Backend/06_Manutenzione/03_Logging.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03_Logging"
+            }
+          },
+          {
+            "id": "9af1aca0858b2d89",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WebApp_Backend/07_Documentazione/01_Endpoint_API.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01_Endpoint_API"
+            }
+          },
+          {
+            "id": "5673fe3176ddcb7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WebApp_Backend/07_Documentazione/02_Struttura_DB.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02_Struttura_DB"
+            }
+          },
+          {
+            "id": "e3a7a000468404ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "WebApp_Backend/07_Documentazione/03_Guida_Deploy.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03_Guida_Deploy"
             }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -92,7 +163,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 365.5
+    "width": 214.5
   },
   "right": {
     "id": "ea9b15337a1a07a3",
@@ -108,7 +179,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SQL/01_Introduzione_SQL.md",
+                "file": "WebApp_Backend/07_Documentazione/03_Guida_Deploy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +189,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a 01_Introduzione_SQL"
+              "title": "Riferimenti a 03_Guida_Deploy"
             }
           },
           {
@@ -127,12 +198,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SQL/01_Introduzione_SQL.md",
+                "file": "WebApp_Backend/07_Documentazione/03_Guida_Deploy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da 01_Introduzione_SQL"
+              "title": "Collegamenti in uscita da 03_Guida_Deploy"
             }
           },
           {
@@ -156,13 +227,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SQL/01_Introduzione_SQL.md",
+                "file": "WebApp_Backend/07_Documentazione/03_Guida_Deploy.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura di 01_Introduzione_SQL"
+              "title": "Struttura di 03_Guida_Deploy"
             }
           }
         ],
@@ -186,29 +257,42 @@
       "smart-connections:Open: Smart Chat Conversation": false
     }
   },
-  "active": "3c66cc2d68f11fc0",
+  "active": "e3a7a000468404ae",
   "lastOpenFiles": [
-    "SQL/Esempi_Pratici/10_SQL_Avanzato.md",
+    "SQL/10_SQL_Avanzato.md",
+    "WebApp_Backend/07_Documentazione/02_Struttura_DB.md",
+    "WebApp_Backend/07_Documentazione/01_Endpoint_API.md",
+    "SQL/09_Gestioni_Permessi_Utenti.md",
     "SQL/Esempi_Pratici/09_Gestione_Permessi.md",
     "SQL/Esempi_Pratici/08_Indicizzazione.md",
-    "SQL/Esempi_Pratici/07_Subquery_CTE.md",
-    "SQL/Esempi_Pratici/06_Aggregazioni.md",
-    "SQL/Esempi_Pratici/04_Filtrare_Dati.md",
-    "SQL/Esempi_Pratici/03_Usare_Join.md",
-    "SQL/Esempi_Pratici/02_Selezionare_Dati.md",
-    "SQL/Esempi_Pratici/01_Creare_Tabelle.md",
-    "SQL/10_SQL_Avanzato.md",
-    "SQL/09_Gestioni_Permessi_Utenti.md",
     "SQL/08_Indicizzazione_e_Performance.md",
-    "SQL/07_Subquery_e_CTE.md",
-    "SQL/06_Aggregazioni.md",
-    "SQL/05_Join_Tabelle.md",
-    "SQL/04_Filtrare_Dati_WHERE.md",
-    "SQL/03_Query_Basilari.md",
-    "SQL/02_Creazione_Tabelle.md",
-    "SQL/01_Introduzione_SQL.md",
-    "SQL/Esempi_Pratici/05_Usare_Join.md",
-    "Senza nome",
+    "WebApp_Backend/06_Manutenzione/03_Logging.md",
+    "WebApp_Backend/06_Manutenzione/02_Aggiornamenti.md",
+    "WebApp_Backend/06_Manutenzione/01_Scalabilità.md",
+    "WebApp_Backend/05_Deployment/03_Monitoraggio.md",
+    "WebApp_Backend/05_Deployment/02_Deploy_Cloud.md",
+    "WebApp_Backend/05_Deployment/01_Configurazione_Server.md",
+    "WebApp_Backend/01_Panoramica_Progetto/01_Panoramica_Progetto.md",
+    "WebApp_Backend/04_Testing_&_Debugging/02_Gestione_Errori.md",
+    "WebApp_Backend/04_Testing_&_Debugging/01_Test_API.md",
+    "WebApp_Backend/03_Implementazione/02_Creazione_API.md",
+    "WebApp_Backend/03_Implementazione/01_Setup_Ambiente.md",
+    "WebApp_Backend/03_Implementazione/05_Gestione_Dati.md",
+    "WebApp_Backend/03_Implementazione/03_Autenticazione.md",
+    "WebApp_Backend/03_Implementazione/04_Autorizzazione.md",
+    "WebApp_Backend/02_Progettazione/05_Sicurezza.md",
+    "WebApp_Backend/02_Progettazione/04_Gestione_Utenti.md",
+    "WebApp_Backend/07_Documentazione/03_Guida_Deploy.md",
+    "WebApp_Backend/02_Progettazione/03_Progettazione_Database.md",
+    "WebApp_Backend/02_Progettazione/02_Architettura_Backend.md",
+    "WebApp_Backend/01_Panoramica_Progetto",
+    "WebApp_Backend/07_Documentazione",
+    "WebApp_Backend/06_Manutenzione",
+    "WebApp_Backend/05_Deployment",
+    "WebApp_Backend/04_Testing_&_Debugging",
+    "WebApp_Backend/03_Implementazione",
+    "WebApp_Backend/02_Progettazione",
+    "WebApp_Backend",
     "SQL/Esempi_Pratici"
   ]
 }

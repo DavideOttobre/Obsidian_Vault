@@ -22,7 +22,7 @@ Un **indice** è una struttura che accelera la ricerca dei dati in una tabella, 
 📌 **Svantaggi**:
 - Gli indici occupano spazio aggiuntivo
 - Le operazioni di `INSERT`, `UPDATE`, `DELETE` diventano leggermente più lente
-````
+
 
 👉 **Vedi esempi pratici**: [[08_Indicizzazione]]
 
