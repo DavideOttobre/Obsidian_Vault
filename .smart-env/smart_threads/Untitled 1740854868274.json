@@ -1,0 +1,106 @@
+{
+  "path": ".smart-env/smart_threads/Untitled 1740854868274.json",
+  "last_embed": {
+    "hash": null
+  },
+  "embeddings": {},
+  "last_read": {
+    "hash": null,
+    "mtime": 0
+  },
+  "created_at": 1740854868274,
+  "responses": {
+    "undefined": {
+      "object": "chat.completion",
+      "created": 1740855217835,
+      "choices": [
+        {
+          "index": 0,
+          "message": {
+            "role": "assistant"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    }
+  },
+  "messages": {
+    "user-1-1740855142218-1": 1,
+    "user-2-1740855217344-1": 2
+  },
+  "branches": {},
+  "class_name": "SmartThread2",
+  "key": "Untitled 1740854868274",
+  "blocks": [
+    {
+      "path": null,
+      "last_embed": {
+        "hash": null
+      },
+      "embeddings": {},
+      "text": null,
+      "length": 0,
+      "last_read": {
+        "hash": null,
+        "at": 0
+      },
+      "thread_key": "Untitled 1740854868274",
+      "content": [
+        {
+          "type": "text",
+          "text": "Forniscimi una panoramica delle mie note"
+        }
+      ],
+      "role": "user",
+      "tool_calls": null,
+      "tool_call_id": null,
+      "msg_i": 1,
+      "id": "user-1-1740855142218-1",
+      "context": {
+        "has_self_ref": true
+      },
+      "tool_call_output": null,
+      "class_name": "SmartMessage",
+      "branch_i": "1740855142218-1",
+      "key": "Untitled 1740854868274#user-1-1740855142218-1"
+    },
+    {
+      "path": null,
+      "last_embed": {
+        "hash": null
+      },
+      "embeddings": {},
+      "text": null,
+      "length": 0,
+      "last_read": {
+        "hash": null,
+        "at": 0
+      },
+      "thread_key": "Untitled 1740854868274",
+      "content": [
+        {
+          "type": "text",
+          "text": "/Python/ fammi un riassunto del contenuto di questa cartella"
+        }
+      ],
+      "role": "user",
+      "tool_calls": null,
+      "tool_call_id": null,
+      "msg_i": 2,
+      "id": "user-2-1740855217344-1",
+      "context": {
+        "folder_refs": [
+          "Python"
+        ]
+      },
+      "tool_call_output": null,
+      "class_name": "SmartMessage",
+      "branch_i": "1740855217344-1",
+      "key": "Untitled 1740854868274#user-2-1740855217344-1"
+    }
+  ]
+}

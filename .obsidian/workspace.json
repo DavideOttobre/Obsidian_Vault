@@ -1,0 +1,214 @@
+{
+  "main": {
+    "id": "719abf0a8a3edb49",
+    "type": "split",
+    "children": [
+      {
+        "id": "3185a2f3d2f4e6a4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "34980d589b604720",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01_Introduzione_SQL.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01_Introduzione_SQL"
+            }
+          },
+          {
+            "id": "0c3b938cd4d21392",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "04_Filtrare_Dati_WHERE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "04_Filtrare_Dati_WHERE"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "805414d32303f75c",
+    "type": "split",
+    "children": [
+      {
+        "id": "11a175148c4b845d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3c66cc2d68f11fc0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Esplora risorse"
+            }
+          },
+          {
+            "id": "2274c0290aafd2c7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Ricerca"
+            }
+          },
+          {
+            "id": "2d6ee4c733701361",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Segnalibri"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 365.5
+  },
+  "right": {
+    "id": "ea9b15337a1a07a3",
+    "type": "split",
+    "children": [
+      {
+        "id": "6629ef8319bdc027",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bcdb266039a1a5e9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "01_Introduzione_SQL.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Riferimenti a 01_Introduzione_SQL"
+            }
+          },
+          {
+            "id": "1d457b75a901484c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "01_Introduzione_SQL.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Collegamenti in uscita da 01_Introduzione_SQL"
+            }
+          },
+          {
+            "id": "71d319f6f3810777",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etichette"
+            }
+          },
+          {
+            "id": "09586c9df58fdc82",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01_Introduzione_SQL.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Struttura di 01_Introduzione_SQL"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Apri selezione rapida": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "daily-notes:Apri nota del giorno": false,
+      "templates:Inserisci modello": false,
+      "command-palette:Apri riquadro comandi": false,
+      "obsidian-git:Open Git source control": false,
+      "smart-connections:Open: View Smart Connections": false,
+      "smart-connections:Open: Smart Chat Conversation": false
+    }
+  },
+  "active": "34980d589b604720",
+  "lastOpenFiles": [
+    "SQL/Esempi_Pratici/10_SQL_Avanzato.md",
+    "SQL/Esempi_Pratici/09_Gestione_Permessi.md",
+    "SQL/Esempi_Pratici/08_Indicizzazione.md",
+    "SQL/Esempi_Pratici/07_Subquery_CTE.md",
+    "SQL/Esempi_Pratici/06_Aggregazioni.md",
+    "SQL/Esempi_Pratici/04_Filtrare_Dati.md",
+    "SQL/Esempi_Pratici/03_Usare_Join.md",
+    "SQL/Esempi_Pratici/02_Selezionare_Dati.md",
+    "SQL/Esempi_Pratici/01_Creare_Tabelle.md",
+    "10_SQL_Avanzato.md",
+    "09_Gestioni_Permessi_Utenti.md",
+    "08_Indicizzazione_e_Performance.md",
+    "07_Subquery_e_CTE.md",
+    "06_Aggregazioni.md",
+    "05_Join_Tabelle.md",
+    "04_Filtrare_Dati_WHERE.md",
+    "03_Query_Basilari.md",
+    "02_Creazione_Tabelle.md",
+    "01_Introduzione_SQL.md",
+    "SQL/Esempi_Pratici/05_Usare_Join.md",
+    "Senza nome",
+    "SQL/Esempi_Pratici"
+  ]
+}
