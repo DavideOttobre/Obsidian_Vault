@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Introduzione_SQL.md",
+                "file": "SQL/01_Introduzione_SQL.md",
                 "mode": "preview",
                 "source": false
               },
@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04_Filtrare_Dati_WHERE.md",
+                "file": "SQL/04_Filtrare_Dati_WHERE.md",
                 "mode": "source",
                 "source": false
               },
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01_Introduzione_SQL.md",
+                "file": "SQL/01_Introduzione_SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01_Introduzione_SQL.md",
+                "file": "SQL/01_Introduzione_SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01_Introduzione_SQL.md",
+                "file": "SQL/01_Introduzione_SQL.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -186,7 +186,7 @@
       "smart-connections:Open: Smart Chat Conversation": false
     }
   },
-  "active": "34980d589b604720",
+  "active": "3c66cc2d68f11fc0",
   "lastOpenFiles": [
     "SQL/Esempi_Pratici/10_SQL_Avanzato.md",
     "SQL/Esempi_Pratici/09_Gestione_Permessi.md",
@@ -197,16 +197,16 @@
     "SQL/Esempi_Pratici/03_Usare_Join.md",
     "SQL/Esempi_Pratici/02_Selezionare_Dati.md",
     "SQL/Esempi_Pratici/01_Creare_Tabelle.md",
-    "10_SQL_Avanzato.md",
-    "09_Gestioni_Permessi_Utenti.md",
-    "08_Indicizzazione_e_Performance.md",
-    "07_Subquery_e_CTE.md",
-    "06_Aggregazioni.md",
-    "05_Join_Tabelle.md",
-    "04_Filtrare_Dati_WHERE.md",
-    "03_Query_Basilari.md",
-    "02_Creazione_Tabelle.md",
-    "01_Introduzione_SQL.md",
+    "SQL/10_SQL_Avanzato.md",
+    "SQL/09_Gestioni_Permessi_Utenti.md",
+    "SQL/08_Indicizzazione_e_Performance.md",
+    "SQL/07_Subquery_e_CTE.md",
+    "SQL/06_Aggregazioni.md",
+    "SQL/05_Join_Tabelle.md",
+    "SQL/04_Filtrare_Dati_WHERE.md",
+    "SQL/03_Query_Basilari.md",
+    "SQL/02_Creazione_Tabelle.md",
+    "SQL/01_Introduzione_SQL.md",
     "SQL/Esempi_Pratici/05_Usare_Join.md",
     "Senza nome",
     "SQL/Esempi_Pratici"
