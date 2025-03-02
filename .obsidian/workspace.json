@@ -4,109 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "3185a2f3d2f4e6a4",
+        "id": "e3440e89b829116f",
         "type": "tabs",
         "children": [
           {
-            "id": "5d2857277ed53022",
+            "id": "e180106fca8b117e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WebApp_Backend/05_Deployment/02_Deploy_Cloud.md",
+                "file": "00_Prompt LLM/Creare Riepilogo Obsidian.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02_Deploy_Cloud"
-            }
-          },
-          {
-            "id": "0971e6b33ab25186",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WebApp_Backend/05_Deployment/03_Monitoraggio.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "03_Monitoraggio"
-            }
-          },
-          {
-            "id": "e652dcab6acb311c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WebApp_Backend/06_Manutenzione/01_Scalabilità.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01_Scalabilità"
-            }
-          },
-          {
-            "id": "c1d6be9da2ef437b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WebApp_Backend/06_Manutenzione/03_Logging.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "03_Logging"
-            }
-          },
-          {
-            "id": "9af1aca0858b2d89",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WebApp_Backend/07_Documentazione/01_Endpoint_API.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01_Endpoint_API"
-            }
-          },
-          {
-            "id": "5673fe3176ddcb7e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WebApp_Backend/07_Documentazione/02_Struttura_DB.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "02_Struttura_DB"
-            }
-          },
-          {
-            "id": "e3a7a000468404ae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WebApp_Backend/07_Documentazione/03_Guida_Deploy.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "03_Guida_Deploy"
+              "title": "Creare Riepilogo Obsidian"
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -163,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 214.5
+    "width": 262.5
   },
   "right": {
     "id": "ea9b15337a1a07a3",
@@ -179,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WebApp_Backend/07_Documentazione/03_Guida_Deploy.md",
+                "file": "TypeScript/02_Fondamenti/01_Tipi_Base.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a 03_Guida_Deploy"
+              "title": "Riferimenti a 01_Tipi_Base"
             }
           },
           {
@@ -198,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WebApp_Backend/07_Documentazione/03_Guida_Deploy.md",
+                "file": "TypeScript/02_Fondamenti/01_Tipi_Base.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da 03_Guida_Deploy"
+              "title": "Collegamenti in uscita da 01_Tipi_Base"
             }
           },
           {
@@ -227,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WebApp_Backend/07_Documentazione/03_Guida_Deploy.md",
+                "file": "TypeScript/02_Fondamenti/01_Tipi_Base.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Struttura di 03_Guida_Deploy"
+              "title": "Struttura di 01_Tipi_Base"
             }
           }
         ],
@@ -252,47 +167,46 @@
       "daily-notes:Apri nota del giorno": false,
       "templates:Inserisci modello": false,
       "command-palette:Apri riquadro comandi": false,
-      "obsidian-git:Open Git source control": false,
-      "smart-connections:Open: View Smart Connections": false,
-      "smart-connections:Open: Smart Chat Conversation": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e3a7a000468404ae",
+  "active": "e180106fca8b117e",
   "lastOpenFiles": [
-    "SQL/10_SQL_Avanzato.md",
-    "WebApp_Backend/07_Documentazione/02_Struttura_DB.md",
-    "WebApp_Backend/07_Documentazione/01_Endpoint_API.md",
-    "SQL/09_Gestioni_Permessi_Utenti.md",
-    "SQL/Esempi_Pratici/09_Gestione_Permessi.md",
-    "SQL/Esempi_Pratici/08_Indicizzazione.md",
-    "SQL/08_Indicizzazione_e_Performance.md",
-    "WebApp_Backend/06_Manutenzione/03_Logging.md",
-    "WebApp_Backend/06_Manutenzione/02_Aggiornamenti.md",
-    "WebApp_Backend/06_Manutenzione/01_Scalabilità.md",
-    "WebApp_Backend/05_Deployment/03_Monitoraggio.md",
-    "WebApp_Backend/05_Deployment/02_Deploy_Cloud.md",
-    "WebApp_Backend/05_Deployment/01_Configurazione_Server.md",
+    "TypeScript/08_Progetti_Applicativi/06_Progetto_Completo.md",
+    "00_Prompt LLM/Creare Riepilogo Obsidian.md",
+    "00_Prompt LLM",
+    "TypeScript/09_Snippets/01_Introduzione.md",
+    "TypeScript/09_Snippets",
+    "TypeScript/08_Progetti_Applicativi/05_Applicazione_Finanza.md",
+    "TypeScript/08_Progetti_Applicativi/03_Chat_RealTime.md",
+    "TypeScript/08_Progetti_Applicativi/04_Dashboard_Analitica.md",
+    "TypeScript/08_Progetti_Applicativi/02_Gestione_Utenti.md",
+    "TypeScript/08_Progetti_Applicativi/01_Introduzione.md",
     "WebApp_Backend/01_Panoramica_Progetto/01_Panoramica_Progetto.md",
-    "WebApp_Backend/04_Testing_&_Debugging/02_Gestione_Errori.md",
-    "WebApp_Backend/04_Testing_&_Debugging/01_Test_API.md",
-    "WebApp_Backend/03_Implementazione/02_Creazione_API.md",
-    "WebApp_Backend/03_Implementazione/01_Setup_Ambiente.md",
-    "WebApp_Backend/03_Implementazione/05_Gestione_Dati.md",
-    "WebApp_Backend/03_Implementazione/03_Autenticazione.md",
-    "WebApp_Backend/03_Implementazione/04_Autorizzazione.md",
-    "WebApp_Backend/02_Progettazione/05_Sicurezza.md",
-    "WebApp_Backend/02_Progettazione/04_Gestione_Utenti.md",
-    "WebApp_Backend/07_Documentazione/03_Guida_Deploy.md",
-    "WebApp_Backend/02_Progettazione/03_Progettazione_Database.md",
-    "WebApp_Backend/02_Progettazione/02_Architettura_Backend.md",
-    "WebApp_Backend/01_Panoramica_Progetto",
-    "WebApp_Backend/07_Documentazione",
-    "WebApp_Backend/06_Manutenzione",
-    "WebApp_Backend/05_Deployment",
-    "WebApp_Backend/04_Testing_&_Debugging",
-    "WebApp_Backend/03_Implementazione",
-    "WebApp_Backend/02_Progettazione",
-    "WebApp_Backend",
-    "SQL/Esempi_Pratici"
+    "TypeScript/07_Esempi_Pratici/04_Librerie_Terze_Parti.md",
+    "TypeScript/07_Esempi_Pratici/03_Front_End_React.md",
+    "TypeScript/07_Esempi_Pratici/06_Gestione Avanzata di Errori e Logging in TypeScript.md",
+    "TypeScript/07_Esempi_Pratici/05_Autenticazonie JWT con TypeScript.md",
+    "TypeScript/07_Esempi_Pratici/02_Node_Express_TS.md",
+    "TypeScript/07_Esempi_Pratici/01_API_REST.md",
+    "TypeScript/06_Soluzione_Problemi/03_StackOverflow_Soluzioni.md",
+    "TypeScript/06_Soluzione_Problemi/02_Debugging.md",
+    "TypeScript/06_Soluzione_Problemi/01_Err_Tipi_Comuni.md",
+    "TypeScript/05_TypeScript_e_JavaScript/03_Tips_Compatibilità.md",
+    "TypeScript/05_TypeScript_e_JavaScript/02_Migrazione_JS_a_TS.md",
+    "TypeScript/05_TypeScript_e_JavaScript/01_Differenze_TS_JS.md",
+    "TypeScript/04_Configurazione_Ambiente/04_Linter_Formatter.md",
+    "TypeScript/02_Fondamenti/01_Tipi_Base.md",
+    "TypeScript/04_Configurazione_Ambiente/03_Compilazione.md",
+    "TypeScript/04_Configurazione_Ambiente/02_Config_Tsconfig.md",
+    "TypeScript/04_Configurazione_Ambiente/01_Installazione.md",
+    "TypeScript/02 Sintassi e struttura/Senza nome",
+    "TypeScript/01_Introduzione",
+    "TypeScript/08_Progetti_Applicativi",
+    "TypeScript/07_Esempi_Pratici",
+    "TypeScript/06_Soluzione_Problemi",
+    "TypeScript/05_TypeScript_e_JavaScript",
+    "TypeScript/04_Configurazione_Ambiente",
+    "TypeScript/03_Programmazione_Avanzata"
   ]
 }

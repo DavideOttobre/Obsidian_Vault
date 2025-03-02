@@ -73,7 +73,8 @@ FROM (SELECT categoria, AVG(prezzo) AS prezzo_medio FROM prodotti GROUP BY categ
 
 ## 📌 CTE (Common Table Expressions)
 
-Una **CTE (`WITH`)** è simile a una subquery, ma: ✅ Migliora la leggibilità  
+Una **CTE (`WITH`)** è simile a una subquery, ma: 
+✅ Migliora la leggibilità  
 ✅ Può essere riutilizzata più volte nella query  
 ✅ Permette di spezzare query complesse in parti più semplici
 

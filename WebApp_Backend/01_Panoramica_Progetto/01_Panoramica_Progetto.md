@@ -34,5 +34,10 @@ Questa web app sarà un sistema backend scalabile, sicuro e performante, progett
 
 ## 🔑 Funzionalità Principali
 
-✅ **Gestione utenti** (registrazione, login, ruoli, permessi) ✅ **Autenticazione sicura** (JWT, OAuth2, hashing password) ✅ **Gestione dati** (CRUD API per modelli principali) ✅ **Logging ed error handling** ✅ **Testing automatico** ✅ **Deploy su cloud con CI/CD**
+✅ **Gestione utenti** (registrazione, login, ruoli, permessi) 
+✅ **Autenticazione sicura** (JWT, OAuth2, hashing password) 
+✅ **Gestione dati** (CRUD API per modelli principali) 
+✅ **Logging ed error handling** 
+✅ **Testing automatico** 
+✅ **Deploy su cloud con CI/CD**
 

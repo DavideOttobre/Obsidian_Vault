@@ -54,4 +54,3 @@ SQL è il linguaggio standard per la gestione dei database relazionali ed è uti
 ✅ **Ottimo per analizzare dati**  
 ✅ **Indispensabile per il lavoro con i database**  
 
-🎯 **Prossimo passo:** [Creazione delle Tabelle](02_Creazione_Tabelle.md)
