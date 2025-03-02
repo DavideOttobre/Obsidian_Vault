@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript/00_Definizioni/Interfacce (Interface).md",
+                "file": "TypeScript/02_Fondamenti/02_Tipi_Complessi.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Interfacce (Interface)"
+              "title": "02_Tipi_Complessi"
             }
           }
         ]
@@ -172,11 +172,11 @@
   },
   "active": "e180106fca8b117e",
   "lastOpenFiles": [
-    "TypeScript/02_Fondamenti/03_Interfacce.md",
-    "TypeScript/00_Definizioni/Interfacce (Interface).md",
-    "TypeScript/00_Definizioni/Tipi (Type).md",
     "TypeScript/02_Fondamenti/01_Tipi_Base.md",
     "TypeScript/02_Fondamenti/02_Tipi_Complessi.md",
+    "TypeScript/00_Definizioni/Interfacce (Interface).md",
+    "TypeScript/02_Fondamenti/03_Interfacce.md",
+    "TypeScript/00_Definizioni/Tipi (Type).md",
     "TypeScript/00_Definizioni",
     "SQL/07_Subquery_e_CTE.md",
     "SQL/10_SQL_Avanzato.md",

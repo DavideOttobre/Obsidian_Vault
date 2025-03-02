@@ -2,7 +2,7 @@
 # 📌 Tipi di Dati in TypeScript
 
 ## 🎯 Introduzione
-In TypeScript, ogni variabile ha un [[Tipi (Type)]] che aiuta a prevenire errori. I tipi possono essere **primitivi** (stringhe, numeri, booleani) o **complessi** (array, oggetti, tuple, enum).
+In TypeScript, ogni variabile ha un **tipo** che aiuta a prevenire errori. I tipi possono essere **primitivi** (stringhe, numeri, booleani) o **complessi** (array, oggetti, tuple, enum).
 
 ---
 

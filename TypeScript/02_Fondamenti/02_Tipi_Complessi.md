@@ -2,7 +2,7 @@
 # 📌 Tipi Complessi in TypeScript
 
 ## 🎯 Introduzione
-Oltre ai tipi primitivi, TypeScript offre **tipi complessi** come **oggetti**, **alias di tipo**, **union types** e **intersection types** per definire strutture più avanzate.
+Oltre ai tipi primitivi, TypeScript offre [[Tipi (Type)]] **complessi** come **oggetti**, **alias di tipo**, **union types** e **intersection types** per definire strutture più avanzate.
 
 ---
 
