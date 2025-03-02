@@ -1,4 +1,3 @@
-
 # 📌 Classi in TypeScript
 
 ## 🎯 Introduzione
@@ -31,6 +30,33 @@ console.log(persona1.saluta()); // "Ciao, mi chiamo Alice e ho 30 anni."
 - **Proprietà (`nome`, `età`)**
 - **Un costruttore (`constructor`)**
 - **Un metodo (`saluta()`)**
+
+---
+
+## 📌 Ereditarietà (`extends`)
+
+Una classe può **ereditare** da un'altra con `extends`.
+
+```ts
+class Studente extends Persona {
+    matricola: number;
+
+    constructor(nome: string, età: number, matricola: number) {
+        super(nome, età); // Richiama il costruttore della superclasse
+        this.matricola = matricola;
+    }
+
+    studia() {
+        return `${this.nome} sta studiando.`;
+    }
+}
+
+const studente1 = new Studente("Luca", 20, 12345);
+console.log(studente1.saluta()); // Eredita il metodo da Persona
+console.log(studente1.studia()); // "Luca sta studiando."
+```
+
+📌 `super()` richiama il **costruttore della classe padre**.
 
 ---
 
@@ -71,33 +97,6 @@ console.log(conto.getSaldo()); // 1500
 ```
 
 📌 **`private saldo`** impedisce di modificare il saldo direttamente dall'esterno della classe.
-
----
-
-## 📌 Ereditarietà (`extends`)
-
-Una classe può **ereditare** da un'altra con `extends`.
-
-```ts
-class Studente extends Persona {
-    matricola: number;
-
-    constructor(nome: string, età: number, matricola: number) {
-        super(nome, età); // Richiama il costruttore della superclasse
-        this.matricola = matricola;
-    }
-
-    studia() {
-        return `${this.nome} sta studiando.`;
-    }
-}
-
-const studente1 = new Studente("Luca", 20, 12345);
-console.log(studente1.saluta()); // Eredita il metodo da Persona
-console.log(studente1.studia()); // "Luca sta studiando."
-```
-
-📌 `super()` richiama il **costruttore della classe padre**.
 
 ---
 
