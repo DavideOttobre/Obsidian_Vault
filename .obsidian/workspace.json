@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Prompt LLM/Creare Riepilogo Obsidian.md",
+                "file": "TypeScript/00_Definizioni/Interfacce (Interface).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Creare Riepilogo Obsidian"
+              "title": "Interfacce (Interface)"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 262.5
+    "width": 200
   },
   "right": {
     "id": "ea9b15337a1a07a3",
@@ -172,8 +172,23 @@
   },
   "active": "e180106fca8b117e",
   "lastOpenFiles": [
-    "TypeScript/08_Progetti_Applicativi/06_Progetto_Completo.md",
+    "TypeScript/02_Fondamenti/03_Interfacce.md",
+    "TypeScript/00_Definizioni/Interfacce (Interface).md",
+    "TypeScript/00_Definizioni/Tipi (Type).md",
+    "TypeScript/02_Fondamenti/01_Tipi_Base.md",
+    "TypeScript/02_Fondamenti/02_Tipi_Complessi.md",
+    "TypeScript/00_Definizioni",
+    "SQL/07_Subquery_e_CTE.md",
+    "SQL/10_SQL_Avanzato.md",
+    "SQL/08_Indicizzazione_e_Performance.md",
+    "SQL/02_Creazione_Tabelle.md",
+    "SQL/03_Query_Basilari.md",
+    "SQL/04_Filtrare_Dati_WHERE.md",
+    "SQL/05_Join_Tabelle.md",
+    "SQL/06_Aggregazioni.md",
     "00_Prompt LLM/Creare Riepilogo Obsidian.md",
+    "TypeScript/01_Introduzione/01_Introduzione.md",
+    "TypeScript/08_Progetti_Applicativi/06_Progetto_Completo.md",
     "00_Prompt LLM",
     "TypeScript/09_Snippets/01_Introduzione.md",
     "TypeScript/09_Snippets",
@@ -186,27 +201,12 @@
     "TypeScript/07_Esempi_Pratici/04_Librerie_Terze_Parti.md",
     "TypeScript/07_Esempi_Pratici/03_Front_End_React.md",
     "TypeScript/07_Esempi_Pratici/06_Gestione Avanzata di Errori e Logging in TypeScript.md",
-    "TypeScript/07_Esempi_Pratici/05_Autenticazonie JWT con TypeScript.md",
-    "TypeScript/07_Esempi_Pratici/02_Node_Express_TS.md",
-    "TypeScript/07_Esempi_Pratici/01_API_REST.md",
-    "TypeScript/06_Soluzione_Problemi/03_StackOverflow_Soluzioni.md",
-    "TypeScript/06_Soluzione_Problemi/02_Debugging.md",
-    "TypeScript/06_Soluzione_Problemi/01_Err_Tipi_Comuni.md",
-    "TypeScript/05_TypeScript_e_JavaScript/03_Tips_Compatibilità.md",
-    "TypeScript/05_TypeScript_e_JavaScript/02_Migrazione_JS_a_TS.md",
-    "TypeScript/05_TypeScript_e_JavaScript/01_Differenze_TS_JS.md",
-    "TypeScript/04_Configurazione_Ambiente/04_Linter_Formatter.md",
-    "TypeScript/02_Fondamenti/01_Tipi_Base.md",
-    "TypeScript/04_Configurazione_Ambiente/03_Compilazione.md",
-    "TypeScript/04_Configurazione_Ambiente/02_Config_Tsconfig.md",
-    "TypeScript/04_Configurazione_Ambiente/01_Installazione.md",
     "TypeScript/02 Sintassi e struttura/Senza nome",
     "TypeScript/01_Introduzione",
     "TypeScript/08_Progetti_Applicativi",
     "TypeScript/07_Esempi_Pratici",
     "TypeScript/06_Soluzione_Problemi",
     "TypeScript/05_TypeScript_e_JavaScript",
-    "TypeScript/04_Configurazione_Ambiente",
-    "TypeScript/03_Programmazione_Avanzata"
+    "TypeScript/04_Configurazione_Ambiente"
   ]
 }

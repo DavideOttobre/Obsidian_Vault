@@ -138,25 +138,12 @@ SELECT * FROM prodotti WHERE categoria != 'alimentari';
 
 ## 🔍 Riepilogo dei Filtri `WHERE`
 
-|Comando|Descrizione|
-|---|---|
-|`WHERE`|Filtra le righe|
-|`AND`|Entrambe le condizioni devono essere vere|
-|`OR`|Almeno una condizione deve essere vera|
-|`BETWEEN`|Seleziona valori tra due estremi|
-|`LIKE`|Cerca stringhe parziali|
-|`NOT`|Esclude valori specifici|
-
-🎯 **Prossimo passo:** [Join tra Tabelle](https://chatgpt.com/c/05_Join_Tabelle)
-
-```
-
----
-
-📌 **Istruzioni per l'uso**:
-1. **Copia e incolla** questo testo in una nuova nota **Obsidian** chiamata `04_Filtrare_Dati_WHERE.md`.  
-2. Il link `[[Esempi_Pratici/04_Filtrare_Dati]]` ti porterà agli esempi pratici.  
-3. **Prossimo file:** Come unire dati da più tabelle con `JOIN`! 🚀
-
-Dimmi se vuoi modifiche o continuo con il quinto file. 😊
-```
+| Comando   | Descrizione                               |
+| --------- | ----------------------------------------- |
+| `WHERE`   | Filtra le righe                           |
+| `AND`     | Entrambe le condizioni devono essere vere |
+| `OR`      | Almeno una condizione deve essere vera    |
+| `BETWEEN` | Seleziona valori tra due estremi          |
+| `LIKE`    | Cerca stringhe parziali                   |
+| `NOT`     | Esclude valori specifici                  |
+|           |                                           |

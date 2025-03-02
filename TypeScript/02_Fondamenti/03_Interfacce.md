@@ -1,7 +1,7 @@
 # 📌 Interfacce in TypeScript
 
 ## 🎯 Introduzione
-Le **interfacce** in TypeScript definiscono la struttura di un oggetto, garantendo che segua un determinato schema.
+Le [[Interfacce (Interface)]] in TypeScript definiscono la struttura di un oggetto, garantendo che segua un determinato schema.
 
 ---
 
