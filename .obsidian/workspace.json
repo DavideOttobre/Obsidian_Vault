@@ -4,56 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e3440e89b829116f",
+        "id": "d7d6892adecbf08f",
         "type": "tabs",
         "children": [
           {
-            "id": "e180106fca8b117e",
+            "id": "05f63b6ce6ab31b7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Angular/01_Introduzione/03_Struttura di un'app Angular.md",
-                "mode": "preview",
+                "file": "Java Script/3. Programmazione Funzionale e Avanzata/3.5 Event Loop.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03_Struttura di un'app Angular"
-            }
-          },
-          {
-            "id": "8de692046b8d4a8e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Angular/02_TypeScript Base (Prerequisito)/04_Funzioni e arrow functions.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "04_Funzioni e arrow functions"
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "a4cc7a143f338a2b",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "899a7f53e96a804c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Angular/01_Introduzione/04_Concetti chiave di Angular.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "04_Concetti chiave di Angular"
+              "title": "3.5 Event Loop"
             }
           }
         ]
@@ -113,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 351.5
+    "width": 260.5
   },
   "right": {
     "id": "ea9b15337a1a07a3",
@@ -205,43 +170,43 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8de692046b8d4a8e",
+  "active": "05f63b6ce6ab31b7",
   "lastOpenFiles": [
-    "Angular/06_Form e Validazione/01_Template-driven Forms vs Reactive Forms.md",
-    "Angular/01_Introduzione/04_Concetti chiave di Angular.md",
-    "Angular/02_TypeScript Base (Prerequisito)/03_Classi e interfacce.md",
-    "Angular/02_TypeScript Base (Prerequisito)/02_Tipi di dati.md",
-    "Angular/02_TypeScript Base (Prerequisito)/01_Introduzione a TypeScript.md",
-    "Angular/01_Introduzione/03_Struttura di un'app Angular.md",
-    "Angular/03_Fondamentali di Angular/01_Componenti in Angular.md",
-    "Angular/01_Introduzione/02_Installazione e primo progetto.md",
-    "Angular/01_Introduzione/01_Cos'è Angular.md",
-    "Angular/08_Ottimizzazione e Best Practices/04_Testing in Angular.md",
-    "Angular/08_Ottimizzazione e Best Practices/03_Gestione della memoria.md",
-    "Angular/08_Ottimizzazione e Best Practices/02_Gestione delle performance.md",
-    "Angular/08_Ottimizzazione e Best Practices/01_Lazy Loading e Moduli Dinamici.md",
-    "Angular/07_RxJS e Programmazione Reattiva/04_Gestione dello stato con BehaviorSubject.md",
-    "Angular/07_RxJS e Programmazione Reattiva/03_Operazioni comuni con RxJS.md",
-    "Angular/07_RxJS e Programmazione Reattiva/02_Observable e Observer.md",
-    "Angular/07_RxJS e Programmazione Reattiva/01_Cos'è RxJS e perché è usato in Angular.md",
-    "Angular/06_Form e Validazione/03_Validazione personalizzata.md",
-    "Angular/06_Form e Validazione/02_Reactive Forms.md",
-    "Angular/05_Routing e Navigazione/04_Routing Avanzato.md",
-    "Angular/05_Routing e Navigazione/03_Guardie di navigazione.md",
-    "Angular/05_Routing e Navigazione/02_RouterModule e Route Parameters.md",
-    "Angular/05_Routing e Navigazione/01_Introduzione al Router di Angular.md",
-    "Angular/04_Servizi e Dependency Injection/04_Gestione degli errori nelle API.md",
-    "Angular/04_Servizi e Dependency Injection/01_Cos'è un servizio.md",
-    "Angular/04_Servizi e Dependency Injection/03_HttpClient e chiamate API.md",
-    "Angular/02_TypeScript Base (Prerequisito)/Senza nome",
-    "Angular/09_Progetto Pratico",
-    "Angular/08_Ottimizzazione e Best Practices",
-    "Angular/07_RxJS e Programmazione Reattiva",
-    "Angular/06_Form e Validazione",
-    "Angular/05_Routing e Navigazione",
-    "Angular/04_Servizi e Dependency Injection",
-    "Angular/03_Fondamentali di Angular",
-    "Angular/02_TypeScript Base (Prerequisito)",
-    "Angular/01_Introduzione"
+    "Java Script/3. Programmazione Funzionale e Avanzata/3.4 Programmazione funzionale.md",
+    "Java Script/3. Programmazione Funzionale e Avanzata/3.3 Async-Await.md",
+    "Java Script/3. Programmazione Funzionale e Avanzata/3.1 Callbacks.md",
+    "Java Script/3. Programmazione Funzionale e Avanzata/3.2 Promises.md",
+    "Java Script/2. Lavorare con i Dati/2.5 Moduli.md",
+    "Java Script/2. Lavorare con i Dati/2.4 Date e Time.md",
+    "Java Script/2. Lavorare con i Dati/2.3 JSON.md",
+    "Java Script/2. Lavorare con i Dati/2.2 Oggetti.md",
+    "Java Script/2. Lavorare con i Dati/2.1 Array.md",
+    "Java Script/1. Fondamenti di JavaScript/1.9 Errori e Debugging.md",
+    "Java Script/1. Fondamenti di JavaScript/1.8 Scope e Closure.md",
+    "Java Script/1. Fondamenti di JavaScript/1.7 Funzioni.md",
+    "Java Script/1. Fondamenti di JavaScript/1.6 Strutture di controllo.md",
+    "Java Script/1. Fondamenti di JavaScript/1.5 Conversione di tipi.md",
+    "Java Script/1. Fondamenti di JavaScript/1.4 Tipi di dati.md",
+    "Java Script/1. Fondamenti di JavaScript/1.3 Sintassi di base.md",
+    "Java Script/1. Fondamenti di JavaScript/1.2 Configurazione Ambiente.md",
+    "Java Script/1. Fondamenti di JavaScript/1.1 Introduzione a JavaScript.md",
+    "Java Script/10. Progetti Pratici/10.5 Drag & Drop Kanban.md",
+    "Java Script/10. Progetti Pratici/10.4 Gioco del Memory.md",
+    "Java Script/10. Progetti Pratici/10.3 Fetch API Viewer.md",
+    "Java Script/10. Progetti Pratici/10.2 Calcolatrice.md",
+    "Java Script/10. Progetti Pratici/10.1 To-Do List.md",
+    "Java Script/9. Best Practices e Ottimizzazione/9.4 Sicurezza.md",
+    "Java Script/9. Best Practices e Ottimizzazione/9.3 Clean Code.md",
+    "Java Script/9. Best Practices e Ottimizzazione/9.2 Performance Optimization.md",
+    "Java Script/10. Progetti Pratici",
+    "Java Script/9. Best Practices e Ottimizzazione",
+    "Java Script/8. Frameworks e Librerie",
+    "Java Script/7. JavaScript nel Browser",
+    "Java Script/6. Programmazione Orientata agli Oggetti (OOP)",
+    "Java Script/5. Interazioni con il Web",
+    "Java Script/4. Manipolazione del DOM",
+    "Java Script/3. Programmazione Funzionale e Avanzata",
+    "Java Script/2. Lavorare con i Dati",
+    "Java Script/1. Fondamenti di JavaScript"
   ]
 }
