@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java Script/3. Programmazione Funzionale e Avanzata/3.5 Event Loop.md",
+                "file": "HOC/Documentazione.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3.5 Event Loop"
+              "title": "Documentazione"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 260.5
+    "width": 373.5
   },
   "right": {
     "id": "ea9b15337a1a07a3",
@@ -172,32 +172,33 @@
   },
   "active": "05f63b6ce6ab31b7",
   "lastOpenFiles": [
-    "Java Script/3. Programmazione Funzionale e Avanzata/3.4 Programmazione funzionale.md",
-    "Java Script/3. Programmazione Funzionale e Avanzata/3.3 Async-Await.md",
-    "Java Script/3. Programmazione Funzionale e Avanzata/3.1 Callbacks.md",
-    "Java Script/3. Programmazione Funzionale e Avanzata/3.2 Promises.md",
-    "Java Script/2. Lavorare con i Dati/2.5 Moduli.md",
-    "Java Script/2. Lavorare con i Dati/2.4 Date e Time.md",
-    "Java Script/2. Lavorare con i Dati/2.3 JSON.md",
-    "Java Script/2. Lavorare con i Dati/2.2 Oggetti.md",
-    "Java Script/2. Lavorare con i Dati/2.1 Array.md",
-    "Java Script/1. Fondamenti di JavaScript/1.9 Errori e Debugging.md",
-    "Java Script/1. Fondamenti di JavaScript/1.8 Scope e Closure.md",
-    "Java Script/1. Fondamenti di JavaScript/1.7 Funzioni.md",
-    "Java Script/1. Fondamenti di JavaScript/1.6 Strutture di controllo.md",
-    "Java Script/1. Fondamenti di JavaScript/1.5 Conversione di tipi.md",
-    "Java Script/1. Fondamenti di JavaScript/1.4 Tipi di dati.md",
-    "Java Script/1. Fondamenti di JavaScript/1.3 Sintassi di base.md",
-    "Java Script/1. Fondamenti di JavaScript/1.2 Configurazione Ambiente.md",
-    "Java Script/1. Fondamenti di JavaScript/1.1 Introduzione a JavaScript.md",
-    "Java Script/10. Progetti Pratici/10.5 Drag & Drop Kanban.md",
-    "Java Script/10. Progetti Pratici/10.4 Gioco del Memory.md",
-    "Java Script/10. Progetti Pratici/10.3 Fetch API Viewer.md",
-    "Java Script/10. Progetti Pratici/10.2 Calcolatrice.md",
-    "Java Script/10. Progetti Pratici/10.1 To-Do List.md",
-    "Java Script/9. Best Practices e Ottimizzazione/9.4 Sicurezza.md",
-    "Java Script/9. Best Practices e Ottimizzazione/9.3 Clean Code.md",
+    "Java Script/6. Programmazione Orientata agli Oggetti (OOP)/6.7 Deploy di un'app Node.js.md",
+    "HOC/Documentazione.md",
+    "HOC",
+    "Angular/09_Progetto Pratico/03_Deploy di un'app Angular.md",
+    "Java Script/8. Frameworks e Librerie/8.6 Database con Node.js e MySQL.md",
+    "Java Script/8. Frameworks e Librerie/8.5 Database con Node.js e MongoDB.md",
+    "Java Script/8. Frameworks e Librerie/8.2 React.js.md",
+    "Java Script/8. Frameworks e Librerie/8.3 Angular.md",
+    "Java Script/8. Frameworks e Librerie/8.4 Node.js.md",
+    "Java Script/8. Frameworks e Librerie/8.1 Introduzione ai Frameworks.md",
+    "Java Script/9. Best Practices e Ottimizzazione/9.1 Debugging avanzato.md",
     "Java Script/9. Best Practices e Ottimizzazione/9.2 Performance Optimization.md",
+    "Java Script/7. JavaScript nel Browser/7.4 Geolocalizzazione.md",
+    "Java Script/7. JavaScript nel Browser/7.3 Drag & Drop.md",
+    "Java Script/7. JavaScript nel Browser/7.1 Manipolazione CSS.md",
+    "Java Script/7. JavaScript nel Browser/7.2 Animazioni e Transizioni.md",
+    "Java Script/6. Programmazione Orientata agli Oggetti (OOP)/6.6 WebSockets in Node.js.md",
+    "Java Script/6. Programmazione Orientata agli Oggetti (OOP)/6.5 Polimorfismo.md",
+    "Java Script/6. Programmazione Orientata agli Oggetti (OOP)/6.4 Encapsulation.md",
+    "Java Script/6. Programmazione Orientata agli Oggetti (OOP)/6.3 Prototype.md",
+    "Java Script/6. Programmazione Orientata agli Oggetti (OOP)/6.2 Ereditarietà.md",
+    "Java Script/6. Programmazione Orientata agli Oggetti (OOP)/6.1 Classi e oggetti.md",
+    "Java Script/5. Interazioni con il Web/5.4 API REST.md",
+    "Java Script/5. Interazioni con il Web/5.3 WebSockets.md",
+    "Java Script/5. Interazioni con il Web/5.2 Web Storage.md",
+    "Java Script/5. Interazioni con il Web/5.1 Fetch API.md",
+    "Java Script/4. Manipolazione del DOM/4.4 Creazione e rimozione di elementi.md",
     "Java Script/10. Progetti Pratici",
     "Java Script/9. Best Practices e Ottimizzazione",
     "Java Script/8. Frameworks e Librerie",
@@ -206,7 +207,6 @@
     "Java Script/5. Interazioni con il Web",
     "Java Script/4. Manipolazione del DOM",
     "Java Script/3. Programmazione Funzionale e Avanzata",
-    "Java Script/2. Lavorare con i Dati",
-    "Java Script/1. Fondamenti di JavaScript"
+    "Java Script/2. Lavorare con i Dati"
   ]
 }
