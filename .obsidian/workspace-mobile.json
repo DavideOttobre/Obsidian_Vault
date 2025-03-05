@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TypeScript/08_Progetti_Applicativi/02_Gestione_Utenti.md",
+                "file": "Java Script/1. Fondamenti di JavaScript/1.7 Funzioni.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02_Gestione_Utenti"
+              "title": "1.7 Funzioni"
             }
           }
         ]
@@ -156,6 +156,8 @@
   },
   "active": "d5e893c7f1bcbb7e",
   "lastOpenFiles": [
+    "Java Script/1. Fondamenti di JavaScript/1.6 Strutture di controllo.md",
+    "TypeScript/08_Progetti_Applicativi/02_Gestione_Utenti.md",
     "TypeScript/02_Fondamenti/02_Tipi_Complessi.md",
     "Angular/01_Introduzione/01_Cos'è Angular.md",
     "TypeScript/02_Fondamenti/05_Funzioni.md",
