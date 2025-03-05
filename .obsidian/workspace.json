@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HOC/Documentazione.md",
+                "file": "HOC/project/Creare DB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Documentazione"
+              "title": "Creare DB"
             }
           }
         ]
@@ -170,8 +170,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3c66cc2d68f11fc0",
+  "active": "05f63b6ce6ab31b7",
   "lastOpenFiles": [
+    "HOC/project/MANUTENZIONE.md",
+    "HOC/project/Creare DB.md",
+    "HOC/project/README.md",
+    "HOC/Documentazione.md",
     "HOC/project/supabase/migrations/20250218135729_bright_meadow.sql",
     "HOC/project/supabase/migrations/20250218135655_crimson_math.sql",
     "HOC/project/supabase/migrations/20250217212226_ivory_sky.sql",
@@ -182,7 +186,6 @@
     "HOC/project/supabase/migrations/20250216201057_delicate_wind.sql",
     "HOC/project/supabase/migrations/20250216195329_bright_bridge.sql",
     "HOC/project/supabase/migrations/20250216192024_ivory_cliff.sql",
-    "HOC/project/supabase/migrations/20250216190725_mellow_leaf.sql",
     "HOC/project/public/OF.svg",
     "HOC/project/node_modules/zod/README.md",
     "HOC/project/node_modules/yocto-queue/readme.md",
@@ -207,9 +210,6 @@
     "HOC/project/node_modules/word-wrap/README.md",
     "HOC/project/node_modules/wmf/README.md",
     "HOC/project/node_modules/which/README.md",
-    "HOC/project/node_modules/which/CHANGELOG.md",
-    "HOC/project/node_modules/vite/README.md",
-    "HOC/project/node_modules/vite/LICENSE.md",
-    "HOC/project/node_modules/uri-js/README.md"
+    "HOC/project/node_modules/which/CHANGELOG.md"
   ]
 }
